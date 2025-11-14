@@ -4,6 +4,21 @@
     box-sizing: border-box;     /*Téléphone: <576px  Tablettes: ≤ 992px  Ordinateurs: ≥993px */
 }
 
+.zoom {
+    opacity: 0;
+    transform: scale(0.95);
+    animation: zoomIn 0.7s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    }
+
+    @keyframes zoomIn {
+    to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
 nav {
     background-color: #fafafa;
     width: 100%;
@@ -667,6 +682,7 @@ footer img{
 }
 
 @media screen and (min-width: 992px) {
+    
     
     nav {
         background-color: transparent;
