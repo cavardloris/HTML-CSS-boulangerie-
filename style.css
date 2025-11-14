@@ -801,7 +801,7 @@ footer img{
 
     .photo-fond-noir{
         width: 100%;
-        min-height: 390px;
+        min-height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
